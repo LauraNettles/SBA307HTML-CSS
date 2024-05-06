@@ -1,0 +1,198 @@
+/* HTML Requirements
+Have at least three pages.
+Keep the grid system consistent between pages as much as possible.
+Use at least ten different HTML tags.
+Include at least one table.
+Include at least two forms.
+Include at least one dropdown menu.
+Include at least one of each of the following forms of content: 
+Text.
+Images.
+GIFs.
+(See resource links above for some free content of each of these types.)
+CSS Requirements
+Make use of inline, internal, and external styling.
+Use five different CSS selectors.
+Use colors that complement each other.
+Coolors is one of many resources that can help you find a color palette.
+Use Flexbox and/or the Bootstrap Grid.
+Use at least two CSS animations. */
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    /* short cut
+    font: 15px/1.5 Arial, Helvetica, sans-serif; */
+    padding:0;
+    margin:0;
+    background-color: #3C91E6;
+}
+
+/*Global*/
+
+.container{
+    /* using % instead of px makes size responsive  */
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.button_1{
+    height: 38px;
+    background: #8D8E8C;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #FAFFFD;
+}
+
+/* Header */
+header {
+    background:#EF5006;
+    color: #FAFFFD;
+    padding-top: 30px;
+    min-height:70px;
+    border-bottom:#8D8E8C 3px solid;
+}
+
+/* the "a" is for the link anchor */
+header a {
+    color:#FAFFFD;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+
+header li{
+    float: left;
+    display: inline;
+    /*top right bottom left */
+    padding: 0 20px 0 20px;
+}
+
+/* use # because companyName is an id, use . for classes.  When everything is the same put it in a container.  When there will be different styles put in an id. */
+header #companyName{
+    float: left;
+    }
+
+/*h1 is an element within the div id=companyName  */
+header #companyName h1{
+    margin:0;
+}
+
+header nav{
+    float:right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a{
+    color: #8D8E8C;
+    font-weight: bold;
+
+}
+
+header a:hover{
+    color: #3C91E6;
+    font-weight: bold;
+}
+
+/* Main Body */
+
+#mainBody {
+    min-height: 400px;
+    background:url('../images/PizzaSign.jpg') no-repeat 0 -400px;
+    text-align: center;
+    color: #FAFFFD;
+    border-bottom:#8D8E8C 3px solid;
+}
+
+#mainBody h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#mainBody p{
+    font-size: 15px;
+}
+
+#pizzaClub{
+    padding:15px;
+    color:#FAFFFD;
+    background:#EF5006;
+    border-bottom:#8D8E8C 3px solid;
+}
+
+#pizzaClub h1{
+    float: left;
+}
+
+#pizzaClub form{
+    float: right;
+    margin-top: 15px;
+}
+
+#pizzaClub input[type="email"]{
+    padding: 4px;
+    height: 24px;
+    width: 250px;
+}
+
+#boxes{
+    margin-top:20px;
+    border-bottom:#8D8E8C 3px solid;
+}
+
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#boxes .box img{
+    width: 90px;
+    height: 90px;
+}
+
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color:#FAFFFD;
+    background-color:#EF5006;
+    text-align: center;
+}meat
+
+table{
+      color: #FAFFFD;
+}
+
+.pizzaMenu{ 
+    /* border: 2px solid; */
+    text-align: center;
+    height: 20px;
+    width: 100%;
+    background-color: #8D8E8C;
+}
+
+table .pizzaPictures {
+     display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);   
+}
+
+table .pizzaPictures img{
+    width: 100%;
+    height: 100%;
+}
